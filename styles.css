@@ -11,6 +11,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff9f9;
+    overflow-x: auto;
 }
 
 table {
@@ -38,7 +39,7 @@ table th {
 .pagination {
     margin-top: 10px;
     display: flex;
-    justify-content: flex-end; /* Align pagination buttons to the right */
+    justify-content: flex-end;
 }
 
 .pagination button {
@@ -57,7 +58,7 @@ table th {
 .bottom-actions {
     margin-top: 16px;
     display: flex;
-    justify-content: flex-start; /* Align buttons to the left */
+    justify-content: flex-start;
 }
 
 .bottom-actions button {
@@ -82,17 +83,37 @@ table th {
 }
 
 .search-input {
-    width: 288px;
+    width: 70%; /* Adjust the width to leave space for the search icon */
+    box-sizing: border-box;
     padding: 8px;
-    height: 14px;
     border-radius: 8px;
-}
-.search-icon{
-    border-radius: 9px;
-    font-size: 10px;
-    height: 30px;
+    margin-top: 10px;
 }
 
-.selected-count{
+.search-icon {
+    border-radius: 9px;
+    font-size: 14px;
+    height: 30px;
+    margin-top: 10px; /* Add margin to align the icon properly */
+}
+
+.selected-count {
     margin-top: 5px;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .admin-dashboard {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+    }
+
+    .search-input {
+        width: 100%; /* Make the search input full width on small screens */
+    }
 }
