@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.admin-dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #fff;
+    color: #171616;
+}
+
+table th {
+    background-color: #d4dae2;
+}
+
+.row-checkbox {
+    margin-left: 8px;
+}
+
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end; /* Align pagination buttons to the right */
+}
+
+.pagination button {
+    margin-right: 5px;
+    background-color: #242e42;
+    color: #dde9f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #1d2636;
+}
+
+.bottom-actions {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.bottom-actions button {
+    margin-right: 5px;
+    background-color: #242e42;
+    color: #dde9f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-actions button:hover {
+    background-color: #1d2636;
+}
+
+.editing {
+    background-color: #7889a4;
+}
+
+.selected {
+    background-color: #d3d3d3;
+}
+
+.search-input {
+    width: 288px;
+    padding: 8px;
+    height: 14px;
+    border-radius: 8px;
+}
+.search-icon{
+    border-radius: 9px;
+    font-size: 10px;
+    height: 30px;
+}
+
+.selected-count{
+    margin-top: 5px;
+}

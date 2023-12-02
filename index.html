@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add a style tag for a loading spinner or message -->
+    <style>
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/925e93caa9.js" crossorigin="anonymous"></script>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="admin-dashboard">
+        <div class="header">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-icon"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </div>
+        
+        <!-- Add a loading message or spinner -->
+        <div class="loading" id="loading">
+            <p>Loading...</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table content will be dynamically generated using JavaScript -->
+            </tbody>
+        </table>
+      
+        <div class="selected-count">0 rows selected</div>
+        <div>
+        <div class="bottom-actions">
+            <button class="select-all">Select All</button>
+            <button class="delete-selected">Delete Selected</button>
+        </div>
+        <div class="pagination">
+            <!-- Pagination buttons will be dynamically generated using JavaScript -->
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
